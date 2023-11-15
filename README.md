@@ -1,6 +1,6 @@
 # Creation-a-web-application-for-Heart-attack-detection-using-Flask-framework.
 
-This initiative introduces a web application developed using Flask, designed to forecast the likelihood of heart attacks in individuals. By employing logistic regression, a powerful predictive modeling technique, and evaluating results using measures like accuracy and precision.
+Welcome to the Heart Attack Risk Prediction Web Application! This initiative introduces a web application developed using Flask, designed to forecast the likelihood of heart attacks in individuals. By employing logistic regression, a powerful predictive modeling technique, and evaluating results using measures like accuracy and precision, this platform aims to provide accurate and informative predictions for potential heart attack occurrences.
 
 ## Steps of project :
 
