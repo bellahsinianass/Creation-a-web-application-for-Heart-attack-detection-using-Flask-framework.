@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>heart attack prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>src="index.js"</script>
+</head>
+<body>
+    <h1>heart attack prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required><br><br>
+        
+        <label for="anaemia">Anaemia:</label>
+        <select id="anaemia" name="anaemia" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br><br>
+        
+        <label for="creatinine_phosphokinase">Creatinine Phosphokinase:</label>
+        <input type="text" id="creatinine_phosphokinase" name="creatinine_phosphokinase" required><br><br>
+        
+        <label for="diabetes">Diabetes:</label>
+        <select id="diabetes" name="diabetes" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br><br>
+        
+        <label for="ejection_fraction">Ejection Fraction:</label>
+        <input type="text" id="ejection_fraction" name="ejection_fraction" required><br><br>
+        
+        <label for="high_blood_pressure">High Blood Pressure:</label>
+        <select id="high_blood_pressure" name="high_blood_pressure" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br><br>
+        
+        <label for="platelets">Platelets:</label>
+        <input type="text" id="platelets" name="platelets" required><br><br>
+        
+        <label for="serum_creatinine">Serum Creatinine:</label>
+        <input type="text" id="serum_creatinine" name="serum_creatinine" required><br><br>
+        
+        <label for="serum_sodium">Serum Sodium:</label>
+        <input type="text" id="serum_sodium" name="serum_sodium" required><br><br>
+        
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex" required>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select><br><br>
+        
+        <label for="smoking">Smoking:</label>
+        <select id="smoking" name="smoking" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br><br>
+        
+        <!-- Include an input field for the missing feature "time" -->
+        <label for="time">Time:</label>
+        <input type="text" id="time" name="time" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction_text %}
+        <h2>{{ prediction_text }}</h2>
+    {% endif %}
+</body>
+</html>
